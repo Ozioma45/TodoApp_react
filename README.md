@@ -2,6 +2,8 @@
 
 A simple and efficient Todo List application built with React.js, allowing users to add, manage, and delete tasks. The application stores the tasks in the browser's `localStorage`, ensuring that the list persists even after the page is refreshed.
 
+- **Live Preview:** [click here](https://todo-app-react-chi-eight.vercel.app)
+
 ## Table of Contents
 
 - [Features](#features)
