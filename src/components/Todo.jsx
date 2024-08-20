@@ -23,13 +23,13 @@ const Todo = () => {
   };
 
   useEffect(() => {
-    setTodos(JSON.parse(localStorage.getItem("todos")));
-    count = localStorage.getItem("todos-count");
+    const savedTodos = JSON.parse(localStorage.getItem("todos")) || [];
+    setTodos(savedTodos);
+    count = localStorage.getItem("todos-count") || 0;
   }, []);
 
   useEffect(() => {
     setTimeout(() => {
-      console.log(todos);
       localStorage.setItem("todos", JSON.stringify(todos));
     }, 100);
   }, [todos]);
